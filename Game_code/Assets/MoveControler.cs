@@ -8,6 +8,7 @@ public class MoveControler : MonoBehaviour
     
     public float DespawnPoint;
     public float SpawnPoint;
+ 
 
     public float MinY;
     public float MaxY;
@@ -21,6 +22,12 @@ public class MoveControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (BirdControler.GameOver || !BirdControler.FirstJump)
+        {
+            return;
+        }
+
+
         transform.position = new Vector3(transform.position.x + Speed * Time.deltaTime, 
             transform.position.y, transform.position.z);
         if(transform.position.x < DespawnPoint)
