@@ -16,6 +16,8 @@ public class BirdControler : MonoBehaviour
     void Start()
     {
         rb2d.gravityScale = 0; 
+        GameOver = false;
+        FirstJump = false;
     }
 
     // Update is called once per frame
