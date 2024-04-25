@@ -364,6 +364,7 @@
 -analyzer:"C:/Program Files/Unity 2023.1.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/BirdControler.cs"
 "Assets/MoveControler.cs"
+"Assets/PointController.cs"
 -langversion:9.0
 
 /deterministic
